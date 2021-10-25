@@ -7,7 +7,29 @@ library(RColorBrewer)
 theme_set(theme_minimal())
 
 register_google(key = Sys.getenv("GL_API_KEY"))
-cph <- geocode("Copenhagen")
+
+
+# Get latitude and longitude for selected cities
+file_name <- "capitals_geocoded.csv"
+
+if (file.exists(file_name)) {
+  capitals_geocoded <- read.csv(file_name) %>% as_tibble()
+  
+} else {
+  
+  # from https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude 
+  # Note, some names are not uniquely geocoded and gets mixed up
+  capitals <- 
+    read.csv2("capitals.csv", header = FALSE) %>%
+    pull(1)
+  
+  capitals_geocoded <-
+    capitals %>% set_names() %>% 
+    map_dfr(geocode, .id = "city")
+  
+  capitals_geocoded %>% write.csv(file_name, row.names = FALSE)
+}
+
 
 # Values
 year_start   <- as_date("2021-01-01")
@@ -20,17 +42,27 @@ day_start    <- as.POSIXct("03:00:00", format = "%H:%M:%S")
 day_end      <- as.POSIXct("23:30:00", format = "%H:%M:%S")
 day_mid      <- as.POSIXct("12:00:00", format = "%H:%M:%S")
 
-df <- tibble(date = seq(year_start, year_end, by="days"),
-             lat = cph$lat, lon = cph$lon, tz ="CET") 
+my_cities <- c("Nairobi", "Bangkok", "New Delhi", "Madrid", "Rome", "London", "Copenhagen", "Oslo", "Nuuk")
+
+# All sun-time data for all days for all cities
+df <- capitals_geocoded %>% 
+  distinct() %>% 
+  group_by(city) %>% 
+  group_split() %>% 
+  map(~ bind_cols(date = seq(year_start, year_end, by = "days"), .x)) %>% 
+  map_dfr(~ getSunlightTimes(data = .)) %>% 
+  as_tibble() %>% 
+  left_join(distinct(capitals_geocoded), by = c("lon", "lat")) 
 
 # To-do:
 # 1) get dates for daylight saving times; depending on year and location   
 # 2) get a nice sample of cities  
 # 3) Visualize span of sunrise /golden hour/dusk /twilight, etc
-             
-sun <- getSunlightTimes(data = df) %>%
-  as_tibble() %>%
-  select(date, sunrise, sunset) %>%
+
+# Selected subset             
+sun <- df %>%
+  select(city, date, sunrise, sunset) %>%
+  filter(city %in% my_cities) %>% 
   mutate(across(
     where(is.POSIXct),
     ~ .x %>%
@@ -48,13 +80,13 @@ sun <- getSunlightTimes(data = df) %>%
     .names = "{.col}_raw"
   ))
 
-
 # My colors
 day_color    <- brewer.pal(8, name = "YlOrRd")[3]
 diff_color   <- brewer.pal(8, name = "YlOrRd")[4]
 sleep_color <- gray(level = 0, alpha = 0.05)
 
 pl <- sun %>%
+  filter(city == "Copenhagen") %>% 
   mutate(fill = day_color) %>%
   ggplot(aes(x = date)) +
   geom_ribbon(aes(ymin = sunrise, ymax = sunset, fill = "Dagslys"), show.legend = T) +
@@ -129,7 +161,6 @@ theme(
   legend.text = element_text(size = 8),
   legend.key.size = unit(1, "line")
 )
-
 
 pl
 pl + geom_curve(
