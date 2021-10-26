@@ -177,7 +177,7 @@ pl <- sun %>%
   ) +
   labs(title = "Sommertid flytter timer med dagslys til det tidsrum, hvor flest er vågne",
        subtitle = paste0("Graf for København. Sommertid flytter over året ", round(gain, 0), " timer fra nat/tidlig morgen til dagtimer"),
-       caption = "Grafik: @lassehmadsen. github.com/lassehjorthmadsen/sommertid",
+       caption = "Grafik: @lassehmadsen",
        y = "Klokken", x = "Måned")
   
 pl
@@ -265,5 +265,5 @@ pl2
   ) +
   labs(title = "Sommertid flytter timer med dagslys til det tidsrum, hvor flest er vågne",
        subtitle = paste0("Graf for København. Sommertid flytter over året ", round(gain, 0), " timer fra nat/tidlig morgen til dagtimer"),
-       caption = "Grafik: @lassehmadsen. github.com/lassehjorthmadsen/sommertid",
+       caption = "Grafik: @lassehmadsen",
        y = "Klokken", x = "Måned")
