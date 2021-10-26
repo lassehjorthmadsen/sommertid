@@ -1,258 +1,258 @@
-"city","lon","lat"
-"Quito",-78.4678382,-0.1806532
-"Kampala",32.5825197,0.3475964
-"São Tomé",6.613081,0.18636
-"Libreville",9.4672676,0.4161976
-"Yaren",166.9210913,-0.5466857
-"Nairobi",36.8219462,-1.2920659
-"Singapore",103.819836,1.352083
-"Tarawa",172.9716617,1.4518171
-"Kigali",30.0618851,-1.9440727
-"Mogadishu",45.3181623,2.0469343
-"Kuala Lumpur",101.686855,3.139003
-"Putrajaya",101.696445,2.926361
-"Gitega",29.9246016,-3.4272755
-"Malabo",8.7821344,3.7549606
-"Yaoundé",11.5020752,3.8480325
-"Malé",73.5093474,4.1754959
-"Brazzaville",15.2428853,-4.2633597
-"Kinshasa",15.2662931,-4.4419311
-"Bangui",18.5581899,4.3946735
-"Bogotá",-74.072092,4.7109886
-"Victoria",-97.0035982,28.8052674
-"Juba",31.57125,4.859363
-"Bandar Seri Begawan",114.939821,4.9030522
-"Cayenne",-52.3134531,4.92242
-"Accra",-0.1869644,5.6037168
-"Paramaribo",-55.2038278,5.8520355
-"Lomé",1.2254183,6.1256261
-"Dodoma",35.7516069,-6.162959
-"Dar es Salaam",39.2083284,-6.792354
-"Jakarta",106.845599,-6.2087634
-"Monrovia",-118.0019482,34.1442616
-"Porto-Novo",2.6288523,6.4968574
-"Cotonou",2.3912362,6.3702928
-"Georgetown",-77.0722585,38.9076089
-"Yamoussoukro",-5.2893433,6.8276228
-"Abidjan",-4.0082563,5.3599517
-"Sri Jayawardenepura Kotte",79.9187142,6.8867616
-"Colombo",79.861243,6.9270786
-"Palikir",158.1610274,6.9147118
-"Majuro",171.266667,7.066667
-"Ngerulmud",134.624289,7.5003835
-"Georgetown",-77.0722585,38.9076089
-"Freetown",-13.2317225,8.4656765
-"Funafuti",179.1961926,-8.5211471
-"Dili",125.5603143,-8.5568557
-"Luanda",13.2301756,-8.8146556
-"Panama City",-85.6602058,30.1588129
-"Addis Ababa",38.7577605,8.9806034
-"Abuja",7.398574,9.0764785
-"Honiara",159.9728999,-9.4456381
-"Port Moresby",147.1802671,-9.4438004
-"Conakry",-13.5784012,9.6411855
-"San José",-121.8863286,37.3382082
-"Hargeisa",44.0770134,9.562389
-"Flying Fish Cove",105.6735131,-10.4318725
-"Caracas",-66.9036063,10.4805937
-"Port of Spain",-61.5085625,10.6603196
-"Phnom Penh",104.9282099,11.5563738
-"Djibouti",42.590275,11.825138
-"Moroni",-111.5904725,39.5249615
-"Bissau",-15.5843227,11.8632196
-"Lima",-77.042754,-12.0463731
-"St. George's",-97.7150192,30.2998695
-"N'Djamena",15.0557415,12.1348457
-"Willemstad",-68.8824233,12.1224221
-"Managua",-86.2361744,12.1149926
-"West Island",-70.8314239,41.6062165
-"Ouagadougou",-1.5196603,12.3714277
-"Oranjestad",-70.0086306,12.5092044
-"Bamako",-8.0028892,12.6392316
-"Bridgetown",-59.6131741,13.1059816
-"Kingstown",-61.2248157,13.1600249
-"Mata-Utu",-176.1764475,-13.2825091
-"Banjul",-16.5753186,13.454375
-"Hagåtña",144.7502228,13.4762824
-"Niamey",2.1253854,13.5115963
-"San Salvador",-89.2181911,13.6929403
-"Bangkok",100.5017651,13.7563309
-"Apia",-171.7513551,-13.8506958
-"Lilongwe",33.7741195,-13.9626121
-"Castries",-60.9874687,14.0101094
-"Tegucigalpa",-87.1715002,14.065049
-"Pago Pago",-170.7020359,-14.2756319
-"Manila",120.9842195,14.5995124
-"Guatemala City",-90.5068824,14.6349149
-"Dakar",-17.4676861,14.716677
-"Praia",-23.5133267,14.93305
-"Saipan",145.7467259,15.1850483
-"Roseau",-95.762766,48.8460926
-"Asmara",38.9250517,15.3228767
-"Sana'a",44.1910066,15.3694451
-"Lusaka",28.3228165,-15.3875259
-"Khartoum",32.5598994,15.5006544
-"Brasília",-47.8918881,-15.7975174
-"Jamestown",-76.7752102,37.2116383
-"Sucre",-65.2592128,-19.035345
-"La Paz",-110.3127531,24.1426408
-"Plymouth",-70.6672621,41.9584457
-"Brades Estate",-62.2106241,16.7909044
-"St. John's",-95.9398444,36.7520596
-"Belmopan",-88.7590201,17.2510114
-"Basseterre",-62.7176924,17.3026058
-"Papeete",-149.5677151,-17.5324608
-"Port Vila",168.3273245,-17.7332512
-"Harare",31.0492259,-17.8216288
-"Gustavia",-62.852201,17.8964345
-"Vientiane",102.6331035,17.9757058
-"Kingston",-73.9973608,41.9270367
-"Philipsburg",-113.2944165,46.332506
-"Marigot",-63.0824656,18.0675189
-"Nouakchott",-15.9582372,18.0735299
-"Suva",178.4232507,-18.1405049
-"The Valley",-118.4396756,34.1825782
-"Charlotte Amalie",-64.9307007,18.3419004
-"Road Town",-64.6184657,18.4286115
-"San Juan",-66.1057355,18.4655394
-"Santo Domingo",-69.9312117,18.4860575
-"Port-au-Prince",-72.3074326,18.594395
-"Antananarivo",47.5079055,-18.8791902
-"Alofi",-169.9178709,-19.0553711
-"George Town",-81.3674389,19.2869323
-"Mexico City",-99.133208,19.4326077
-"Naypyidaw",96.0785104,19.7633057
-"Port Louis",57.5012222,-20.1608912
-"Hanoi",105.8341598,21.0277644
-"Nuku?alofa",-175.204947,-21.1393418
-"Avarua",-159.7823059,-21.2129007
-"Wan Chai",114.1751471,22.276022
-"Nouméa",166.4480887,-22.2734912
-"Windhoek",17.0657549,-22.5608807
-"Havana",-82.3665956,23.1135925
-"Muscat",58.3828717,23.5880307
-"Dhaka",90.4125181,23.810332
-"Abu Dhabi",54.3773438,24.453884
-"Riyadh",46.6752957,24.7135517
-"Gaborone",25.9231471,-24.6282079
-"Taipei",121.5654268,25.0329636
-"Adamstown",-130.1004636,-25.0662897
-"Nassau",-77.3503609,25.0443312
-"Asunción",-57.575926,-25.2637399
-"Doha",51.5310398,25.2854473
-"Pretoria",28.2292712,-25.7478676
-"Maputo",32.5731746,-25.969248
-"Manama",50.5875935,26.2235305
-"Mbabane",31.1366715,-26.3054482
-"Lobamba",31.1824925,-26.400429
-"El Aaiún",-13.1990758,27.1500384
-"Hanga Roa",-109.4333,-27.15
-"Thimphu",89.6339041,27.4712216
-"Kathmandu",85.3239605,27.7172453
-"New Delhi",77.2090212,28.6139391
-"Kingston",-73.9973608,41.9270367
-"Bloemfontein",26.1595761,-29.085214
-"Maseru",27.4869229,-29.3150767
-"Kuwait City",47.9774052,29.375859
-"Cairo",31.2357116,30.0444196
-"Jerusalem",35.21371,31.768319
-"Amman",35.910635,31.9539494
-"Hamilton",-95.7175467,37.1929578
-"Tripoli",13.1913383,32.8872094
-"Baghdad",44.3660671,33.315241
-"Santiago",-70.6692655,-33.4488897
-"Valparaíso",-71.6126885,-33.047238
-"Damascus",36.2765279,33.5138073
-"Islamabad",73.0478848,33.6844202
-"Beirut",35.5017767,33.8937913
-"Cape Town",18.4240553,-33.9248685
-"Rabat",-6.8498129,33.9715904
-"Kabul",69.207486,34.5553494
-"Buenos Aires",-58.3815591,-34.6036844
-"Episkopi Cantonment",32.83876,34.6768911
-"Montevideo",-56.1645314,-34.9011127
-"Nicosia",33.3822764,35.1855659
-"Nicosia",33.3822764,35.1855659
-"Canberra",149.1300092,-35.2809368
-"Tehran",51.3889736,35.6891975
-"Tokyo",139.6503106,35.6761919
-"Valletta",14.5145528,35.8989085
-"Gibraltar",-5.353585,36.140751
-"Algiers",3.0587561,36.753768
-"Tunis",10.1815316,36.8064948
-"Edinburgh of the Seven Seas",-12.3113147,-37.0680421
-"Seoul",126.9779692,37.566535
-"Ashgabat",58.3260629,37.9600766
-"Athens",23.7275388,37.9838096
-"Dushanbe",68.7870384,38.5597722
-"Lisbon",-9.1393366,38.7222524
-"Washington, D.C.",-77.0368707,38.9071923
-"Pyongyang",125.7625241,39.0392193
-"Stepanakert",46.7655746,39.8265279
-"Ankara",32.8597419,39.9333635
-"Beijing",116.4073963,39.9041999
-"Yerevan",44.515209,40.1872023
-"Baku",49.8670924,40.4092617
-"Madrid",-3.7037902,40.4167754
-"Tashkent",69.2400734,41.2994958
-"Wellington",174.7787463,-41.2923814
-"Tirana",19.8186982,41.3275459
-"Tbilisi",44.827096,41.7151377
-"Rome",12.4963655,41.9027835
-"Vatican City",12.453389,41.902916
-"Skopje",21.4254355,41.9981294
-"Tskhinvali",43.9644051,42.2214597
-"Kutaisi",42.7180019,42.2662428
-"Podgorica",19.2593642,42.4304196
-"Cetinje",18.9115964,42.3930959
-"Andorra la Vella",1.5218355,42.5063174
-"Pristina",21.1655028,42.6629138
-"Sofia",23.3218675,42.6977082
-"Bishkek",74.5697617,42.8746212
-"Sukhumi",41.0234153,43.0015252
-"Monaco",7.4246158,43.7384176
-"Sarajevo",18.4130763,43.8562586
-"San Marino",12.457777,43.94236
-"Bucharest",26.1025384,44.4267674
-"Belgrade",20.4612299,44.8125449
-"Ottawa",-75.6971931,45.4215296
-"Zagreb",15.9819189,45.8150108
-"Ljubljana",14.5057515,46.0569465
-"St. Pierre",-56.1806363,46.7758459
-"Tiraspol",29.5968051,46.848185
-"Bern",7.4474468,46.9479739
-"Chi?in?u",-95.4632962,30.2050585
-"Vaduz",9.5209277,47.1410303
-"Budapest",19.040235,47.497912
-"Ulan Bator",106.9057439,47.8863988
-"Bratislava",17.1077478,48.1485965
-"Vienna",16.3738189,48.2081743
-"Paris",2.3522219,48.856614
-"St. Helier",-2.103233,49.1805019
-"St. Peter Port",-2.5497069,49.4541677
-"Luxembourg",6.129583,49.815273
-"Prague",14.4378005,50.0755381
-"Kiev",30.5234,50.4501
-"Brussels",4.3517103,50.8503396
-"Nur-Sultan",71.4703558,51.1605227
-"London",-0.1275862,51.5072178
-"Stanley",-95.9654332,36.1304285
-"Warsaw",21.0122287,52.2296756
-"Amsterdam",4.9041389,52.3675734
-"Berlin",13.404954,52.5200066
-"Dublin",-6.2603097,53.3498053
-"Minsk",27.558972,53.9006011
-"Douglas",-104.9388853,39.2587106
-"King Edward Point",-36.493735,-54.2832502
-"Vilnius",25.2796514,54.6871555
-"Copenhagen",12.5683372,55.6760968
-"Moscow",37.6172999,55.755826
-"Riga",24.1051865,56.9496487
-"Stockholm",18.0685808,59.3293235
-"Tallinn",24.7535747,59.4369608
-"Oslo",10.7522454,59.9138688
-"Helsinki",24.9383791,60.1698557
-"Tórshavn",-6.7740852,62.0107248
-"Reykjavík",-21.9426354,64.146582
-"Nuuk",-51.6941381,64.1814099
-"Longyearbyen",15.6267229,78.2231722
+"city","lon","lat","tz"
+"Quito",-78.4678382,-0.1806532,"America/Guayaquil"
+"Kampala",32.5825197,0.3475964,"Africa/Kampala"
+"São Tomé",6.613081,0.18636,"Africa/Sao_Tome"
+"Libreville",9.4672676,0.4161976,"Africa/Libreville"
+"Yaren",166.9210913,-0.5466857,"Pacific/Nauru"
+"Nairobi",36.8219462,-1.2920659,"Africa/Nairobi"
+"Singapore",103.819836,1.352083,"Asia/Singapore"
+"Tarawa",172.9716617,1.4518171,"Pacific/Tarawa"
+"Kigali",30.0618851,-1.9440727,"Africa/Kigali"
+"Mogadishu",45.3181623,2.0469343,"Africa/Mogadishu"
+"Kuala Lumpur",101.686855,3.139003,"Asia/Kuala_Lumpur"
+"Putrajaya",101.696445,2.926361,"Asia/Kuala_Lumpur"
+"Gitega",29.9246016,-3.4272755,"Africa/Bujumbura"
+"Malabo",8.7821344,3.7549606,"Africa/Malabo"
+"Yaoundé",11.5020752,3.8480325,"Africa/Douala"
+"Malé",73.5093474,4.1754959,"Indian/Maldives"
+"Brazzaville",15.2428853,-4.2633597,"Africa/Brazzaville"
+"Kinshasa",15.2662931,-4.4419311,"Africa/Kinshasa"
+"Bangui",18.5581899,4.3946735,"Africa/Bangui"
+"Bogotá",-74.072092,4.7109886,"America/Bogota"
+"Victoria",-97.0035982,28.8052674,"America/Chicago"
+"Juba",31.57125,4.859363,"Africa/Juba"
+"Bandar Seri Begawan",114.939821,4.9030522,"Asia/Brunei"
+"Cayenne",-52.3134531,4.92242,"America/Cayenne"
+"Accra",-0.1869644,5.6037168,"Africa/Accra"
+"Paramaribo",-55.2038278,5.8520355,"America/Paramaribo"
+"Lomé",1.2254183,6.1256261,"Africa/Lome"
+"Dodoma",35.7516069,-6.162959,"Africa/Dar_es_Salaam"
+"Dar es Salaam",39.2083284,-6.792354,"Africa/Dar_es_Salaam"
+"Jakarta",106.845599,-6.2087634,"Asia/Jakarta"
+"Monrovia",-118.0019482,34.1442616,"America/Los_Angeles"
+"Porto-Novo",2.6288523,6.4968574,"Africa/Porto-Novo"
+"Cotonou",2.3912362,6.3702928,"Africa/Porto-Novo"
+"Georgetown",-77.0722585,38.9076089,"America/New_York"
+"Yamoussoukro",-5.2893433,6.8276228,"Africa/Abidjan"
+"Abidjan",-4.0082563,5.3599517,"Africa/Abidjan"
+"Sri Jayawardenepura Kotte",79.9187142,6.8867616,"Asia/Colombo"
+"Colombo",79.861243,6.9270786,"Asia/Colombo"
+"Palikir",158.1610274,6.9147118,"Pacific/Pohnpei"
+"Majuro",171.266667,7.066667,"Pacific/Majuro"
+"Ngerulmud",134.624289,7.5003835,"Pacific/Palau"
+"Georgetown",-77.0722585,38.9076089,"America/New_York"
+"Freetown",-13.2317225,8.4656765,"Africa/Freetown"
+"Funafuti",179.1961926,-8.5211471,"Pacific/Funafuti"
+"Dili",125.5603143,-8.5568557,"Asia/Dili"
+"Luanda",13.2301756,-8.8146556,"Africa/Luanda"
+"Panama City",-85.6602058,30.1588129,"America/Chicago"
+"Addis Ababa",38.7577605,8.9806034,"Africa/Addis_Ababa"
+"Abuja",7.398574,9.0764785,"Africa/Lagos"
+"Honiara",159.9728999,-9.4456381,"Pacific/Guadalcanal"
+"Port Moresby",147.1802671,-9.4438004,"Pacific/Port_Moresby"
+"Conakry",-13.5784012,9.6411855,"Africa/Conakry"
+"San José",-121.8863286,37.3382082,"America/Los_Angeles"
+"Hargeisa",44.0770134,9.562389,"Africa/Mogadishu"
+"Flying Fish Cove",105.6735131,-10.4318725,"Indian/Christmas"
+"Caracas",-66.9036063,10.4805937,"America/Caracas"
+"Port of Spain",-61.5085625,10.6603196,"America/Port_of_Spain"
+"Phnom Penh",104.9282099,11.5563738,"Asia/Phnom_Penh"
+"Djibouti",42.590275,11.825138,"Africa/Djibouti"
+"Moroni",-111.5904725,39.5249615,"America/Denver"
+"Bissau",-15.5843227,11.8632196,"Africa/Bissau"
+"Lima",-77.042754,-12.0463731,"America/Lima"
+"St. George's",-97.7150192,30.2998695,"America/Chicago"
+"N'Djamena",15.0557415,12.1348457,"Africa/Ndjamena"
+"Willemstad",-68.8824233,12.1224221,"America/Curacao"
+"Managua",-86.2361744,12.1149926,"America/Managua"
+"West Island",-70.8314239,41.6062165,"America/New_York"
+"Ouagadougou",-1.5196603,12.3714277,"Africa/Ouagadougou"
+"Oranjestad",-70.0086306,12.5092044,"America/Aruba"
+"Bamako",-8.0028892,12.6392316,"Africa/Bamako"
+"Bridgetown",-59.6131741,13.1059816,"America/Barbados"
+"Kingstown",-61.2248157,13.1600249,"America/St_Vincent"
+"Mata-Utu",-176.1764475,-13.2825091,"Pacific/Wallis"
+"Banjul",-16.5753186,13.454375,"Africa/Banjul"
+"Hagåtña",144.7502228,13.4762824,"Pacific/Guam"
+"Niamey",2.1253854,13.5115963,"Africa/Niamey"
+"San Salvador",-89.2181911,13.6929403,"America/El_Salvador"
+"Bangkok",100.5017651,13.7563309,"Asia/Bangkok"
+"Apia",-171.7513551,-13.8506958,"Pacific/Apia"
+"Lilongwe",33.7741195,-13.9626121,"Africa/Blantyre"
+"Castries",-60.9874687,14.0101094,"America/St_Lucia"
+"Tegucigalpa",-87.1715002,14.065049,"America/Tegucigalpa"
+"Pago Pago",-170.7020359,-14.2756319,"Pacific/Pago_Pago"
+"Manila",120.9842195,14.5995124,"Asia/Manila"
+"Guatemala City",-90.5068824,14.6349149,"America/Guatemala"
+"Dakar",-17.4676861,14.716677,"Africa/Dakar"
+"Praia",-23.5133267,14.93305,"Atlantic/Cape_Verde"
+"Saipan",145.7467259,15.1850483,"Pacific/Saipan"
+"Roseau",-95.762766,48.8460926,"America/Chicago"
+"Asmara",38.9250517,15.3228767,"Africa/Asmara"
+"Sana'a",44.1910066,15.3694451,"Asia/Aden"
+"Lusaka",28.3228165,-15.3875259,"Africa/Lusaka"
+"Khartoum",32.5598994,15.5006544,"Africa/Khartoum"
+"Brasília",-47.8918881,-15.7975174,"America/Sao_Paulo"
+"Jamestown",-76.7752102,37.2116383,"America/New_York"
+"Sucre",-65.2592128,-19.035345,"America/La_Paz"
+"La Paz",-110.3127531,24.1426408,"America/Mazatlan"
+"Plymouth",-70.6672621,41.9584457,"America/New_York"
+"Brades Estate",-62.2106241,16.7909044,"America/Montserrat"
+"St. John's",-95.9398444,36.7520596,"America/Chicago"
+"Belmopan",-88.7590201,17.2510114,"America/Belize"
+"Basseterre",-62.7176924,17.3026058,"America/St_Kitts"
+"Papeete",-149.5677151,-17.5324608,"Pacific/Tahiti"
+"Port Vila",168.3273245,-17.7332512,"Pacific/Efate"
+"Harare",31.0492259,-17.8216288,"Africa/Harare"
+"Gustavia",-62.852201,17.8964345,"America/St_Barthelemy"
+"Vientiane",102.6331035,17.9757058,"Asia/Vientiane"
+"Kingston",-73.9973608,41.9270367,"America/New_York"
+"Philipsburg",-113.2944165,46.332506,"America/Denver"
+"Marigot",-63.0824656,18.0675189,"America/Marigot"
+"Nouakchott",-15.9582372,18.0735299,"Africa/Nouakchott"
+"Suva",178.4232507,-18.1405049,"Pacific/Fiji"
+"The Valley",-118.4396756,34.1825782,"America/Los_Angeles"
+"Charlotte Amalie",-64.9307007,18.3419004,"America/St_Thomas"
+"Road Town",-64.6184657,18.4286115,"America/Tortola"
+"San Juan",-66.1057355,18.4655394,"America/Puerto_Rico"
+"Santo Domingo",-69.9312117,18.4860575,"America/Santo_Domingo"
+"Port-au-Prince",-72.3074326,18.594395,"America/Port-au-Prince"
+"Antananarivo",47.5079055,-18.8791902,"Indian/Antananarivo"
+"Alofi",-169.9178709,-19.0553711,"Pacific/Niue"
+"George Town",-81.3674389,19.2869323,"America/Cayman"
+"Mexico City",-99.133208,19.4326077,"America/Mexico_City"
+"Naypyidaw",96.0785104,19.7633057,"Asia/Yangon"
+"Port Louis",57.5012222,-20.1608912,"Indian/Mauritius"
+"Hanoi",105.8341598,21.0277644,"Asia/Bangkok"
+"Nuku?alofa",-175.204947,-21.1393418,"Pacific/Tongatapu"
+"Avarua",-159.7823059,-21.2129007,"Pacific/Rarotonga"
+"Wan Chai",114.1751471,22.276022,"Asia/Hong_Kong"
+"Nouméa",166.4480887,-22.2734912,"Pacific/Noumea"
+"Windhoek",17.0657549,-22.5608807,"Africa/Windhoek"
+"Havana",-82.3665956,23.1135925,"America/Havana"
+"Muscat",58.3828717,23.5880307,"Asia/Muscat"
+"Dhaka",90.4125181,23.810332,"Asia/Dhaka"
+"Abu Dhabi",54.3773438,24.453884,"Asia/Dubai"
+"Riyadh",46.6752957,24.7135517,"Asia/Riyadh"
+"Gaborone",25.9231471,-24.6282079,"Africa/Gaborone"
+"Taipei",121.5654268,25.0329636,"Asia/Taipei"
+"Adamstown",-130.1004636,-25.0662897,"Pacific/Pitcairn"
+"Nassau",-77.3503609,25.0443312,"America/Nassau"
+"Asunción",-57.575926,-25.2637399,"America/Asuncion"
+"Doha",51.5310398,25.2854473,"Asia/Qatar"
+"Pretoria",28.2292712,-25.7478676,"Africa/Johannesburg"
+"Maputo",32.5731746,-25.969248,"Africa/Maputo"
+"Manama",50.5875935,26.2235305,"Asia/Bahrain"
+"Mbabane",31.1366715,-26.3054482,"Africa/Mbabane"
+"Lobamba",31.1824925,-26.400429,"Africa/Mbabane"
+"El Aaiún",-13.1990758,27.1500384,"Africa/El_Aaiun"
+"Hanga Roa",-109.4333,-27.15,"Pacific/Easter"
+"Thimphu",89.6339041,27.4712216,"Asia/Thimphu"
+"Kathmandu",85.3239605,27.7172453,"Asia/Kathmandu"
+"New Delhi",77.2090212,28.6139391,"Asia/Kolkata"
+"Kingston",-73.9973608,41.9270367,"America/New_York"
+"Bloemfontein",26.1595761,-29.085214,"Africa/Johannesburg"
+"Maseru",27.4869229,-29.3150767,"Africa/Maseru"
+"Kuwait City",47.9774052,29.375859,"Asia/Kuwait"
+"Cairo",31.2357116,30.0444196,"Africa/Cairo"
+"Jerusalem",35.21371,31.768319,"Asia/Jerusalem"
+"Amman",35.910635,31.9539494,"Asia/Amman"
+"Hamilton",-95.7175467,37.1929578,"America/Chicago"
+"Tripoli",13.1913383,32.8872094,"Africa/Tripoli"
+"Baghdad",44.3660671,33.315241,"Asia/Baghdad"
+"Santiago",-70.6692655,-33.4488897,"America/Santiago"
+"Valparaíso",-71.6126885,-33.047238,"America/Santiago"
+"Damascus",36.2765279,33.5138073,"Asia/Damascus"
+"Islamabad",73.0478848,33.6844202,"Asia/Karachi"
+"Beirut",35.5017767,33.8937913,"Asia/Beirut"
+"Cape Town",18.4240553,-33.9248685,"Africa/Johannesburg"
+"Rabat",-6.8498129,33.9715904,"Africa/Casablanca"
+"Kabul",69.207486,34.5553494,"Asia/Kabul"
+"Buenos Aires",-58.3815591,-34.6036844,"America/Argentina/Buenos_Aires"
+"Episkopi Cantonment",32.83876,34.6768911,"Asia/Nicosia"
+"Montevideo",-56.1645314,-34.9011127,"America/Montevideo"
+"Nicosia",33.3822764,35.1855659,"Asia/Nicosia"
+"Nicosia",33.3822764,35.1855659,"Asia/Nicosia"
+"Canberra",149.1300092,-35.2809368,"Australia/Sydney"
+"Tehran",51.3889736,35.6891975,"Asia/Tehran"
+"Tokyo",139.6503106,35.6761919,"Asia/Tokyo"
+"Valletta",14.5145528,35.8989085,"Europe/Malta"
+"Gibraltar",-5.353585,36.140751,"Europe/Gibraltar"
+"Algiers",3.0587561,36.753768,"Africa/Algiers"
+"Tunis",10.1815316,36.8064948,"Africa/Tunis"
+"Edinburgh of the Seven Seas",-12.3113147,-37.0680421,"Atlantic/St_Helena"
+"Seoul",126.9779692,37.566535,"Asia/Seoul"
+"Ashgabat",58.3260629,37.9600766,"Asia/Ashgabat"
+"Athens",23.7275388,37.9838096,"Europe/Athens"
+"Dushanbe",68.7870384,38.5597722,"Asia/Dushanbe"
+"Lisbon",-9.1393366,38.7222524,"Europe/Lisbon"
+"Washington, D.C.",-77.0368707,38.9071923,"America/New_York"
+"Pyongyang",125.7625241,39.0392193,"Asia/Pyongyang"
+"Stepanakert",46.7655746,39.8265279,"Asia/Baku"
+"Ankara",32.8597419,39.9333635,"Europe/Istanbul"
+"Beijing",116.4073963,39.9041999,"Asia/Shanghai"
+"Yerevan",44.515209,40.1872023,"Asia/Yerevan"
+"Baku",49.8670924,40.4092617,"Asia/Baku"
+"Madrid",-3.7037902,40.4167754,"Europe/Madrid"
+"Tashkent",69.2400734,41.2994958,"Asia/Tashkent"
+"Wellington",174.7787463,-41.2923814,"Pacific/Auckland"
+"Tirana",19.8186982,41.3275459,"Europe/Tirane"
+"Tbilisi",44.827096,41.7151377,"Asia/Tbilisi"
+"Rome",12.4963655,41.9027835,"Europe/Rome"
+"Vatican City",12.453389,41.902916,"Europe/Vatican"
+"Skopje",21.4254355,41.9981294,"Europe/Skopje"
+"Tskhinvali",43.9644051,42.2214597,"Asia/Tbilisi"
+"Kutaisi",42.7180019,42.2662428,"Asia/Tbilisi"
+"Podgorica",19.2593642,42.4304196,"Europe/Podgorica"
+"Cetinje",18.9115964,42.3930959,"Europe/Podgorica"
+"Andorra la Vella",1.5218355,42.5063174,"Europe/Andorra"
+"Pristina",21.1655028,42.6629138,"Europe/Belgrade"
+"Sofia",23.3218675,42.6977082,"Europe/Sofia"
+"Bishkek",74.5697617,42.8746212,"Asia/Bishkek"
+"Sukhumi",41.0234153,43.0015252,"Asia/Tbilisi"
+"Monaco",7.4246158,43.7384176,"Europe/Monaco"
+"Sarajevo",18.4130763,43.8562586,"Europe/Sarajevo"
+"San Marino",12.457777,43.94236,"Europe/San_Marino"
+"Bucharest",26.1025384,44.4267674,"Europe/Bucharest"
+"Belgrade",20.4612299,44.8125449,"Europe/Belgrade"
+"Ottawa",-75.6971931,45.4215296,"America/Toronto"
+"Zagreb",15.9819189,45.8150108,"Europe/Zagreb"
+"Ljubljana",14.5057515,46.0569465,"Europe/Ljubljana"
+"St. Pierre",-56.1806363,46.7758459,"America/Miquelon"
+"Tiraspol",29.5968051,46.848185,"Europe/Chisinau"
+"Bern",7.4474468,46.9479739,"Europe/Zurich"
+"Chi?in?u",-95.4632962,30.2050585,"America/Chicago"
+"Vaduz",9.5209277,47.1410303,"Europe/Vaduz"
+"Budapest",19.040235,47.497912,"Europe/Budapest"
+"Ulan Bator",106.9057439,47.8863988,"Asia/Ulaanbaatar"
+"Bratislava",17.1077478,48.1485965,"Europe/Bratislava"
+"Vienna",16.3738189,48.2081743,"Europe/Vienna"
+"Paris",2.3522219,48.856614,"Europe/Paris"
+"St. Helier",-2.103233,49.1805019,"Europe/Jersey"
+"St. Peter Port",-2.5497069,49.4541677,"Europe/Guernsey"
+"Luxembourg",6.129583,49.815273,"Europe/Luxembourg"
+"Prague",14.4378005,50.0755381,"Europe/Prague"
+"Kiev",30.5234,50.4501,"Europe/Kiev"
+"Brussels",4.3517103,50.8503396,"Europe/Brussels"
+"Nur-Sultan",71.4703558,51.1605227,"Asia/Almaty"
+"London",-0.1275862,51.5072178,"Europe/London"
+"Stanley",-95.9654332,36.1304285,"America/Chicago"
+"Warsaw",21.0122287,52.2296756,"Europe/Warsaw"
+"Amsterdam",4.9041389,52.3675734,"Europe/Amsterdam"
+"Berlin",13.404954,52.5200066,"Europe/Berlin"
+"Dublin",-6.2603097,53.3498053,"Europe/Dublin"
+"Minsk",27.558972,53.9006011,"Europe/Minsk"
+"Douglas",-104.9388853,39.2587106,"America/Denver"
+"King Edward Point",-36.493735,-54.2832502,"Atlantic/South_Georgia"
+"Vilnius",25.2796514,54.6871555,"Europe/Vilnius"
+"Copenhagen",12.5683372,55.6760968,"Europe/Copenhagen"
+"Moscow",37.6172999,55.755826,"Europe/Moscow"
+"Riga",24.1051865,56.9496487,"Europe/Riga"
+"Stockholm",18.0685808,59.3293235,"Europe/Stockholm"
+"Tallinn",24.7535747,59.4369608,"Europe/Tallinn"
+"Oslo",10.7522454,59.9138688,"Europe/Oslo"
+"Helsinki",24.9383791,60.1698557,"Europe/Helsinki"
+"Tórshavn",-6.7740852,62.0107248,"Atlantic/Faroe"
+"Reykjavík",-21.9426354,64.146582,"Atlantic/Reykjavik"
+"Nuuk",-51.6941381,64.1814099,"America/Godthab"
+"Longyearbyen",15.6267229,78.2231722,"Arctic/Longyearbyen"

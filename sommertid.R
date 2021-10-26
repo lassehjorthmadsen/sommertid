@@ -3,6 +3,7 @@ library(ggmap)
 library(suncalc)
 library(lubridate)
 library(RColorBrewer) 
+library(lutz)
 
 theme_set(theme_minimal())
 
@@ -25,7 +26,8 @@ if (file.exists(file_name)) {
   
   capitals_geocoded <-
     capitals %>% set_names() %>% 
-    map_dfr(geocode, .id = "city")
+    map_dfr(geocode, .id = "city") %>% 
+    mutate(tz = tz_lookup_coords(lat = lat, lon = lon, method = "accurate"))
   
   capitals_geocoded %>% write.csv(file_name, row.names = FALSE)
 }
@@ -80,14 +82,29 @@ sun <- df %>%
     .names = "{.col}_raw"
   ))
 
-# My colors
-day_color    <- brewer.pal(8, name = "YlOrRd")[3]
-diff_color   <- brewer.pal(8, name = "YlOrRd")[4]
-sleep_color <- gray(level = 0, alpha = 0.05)
 
+# My colors
+day_color   <- brewer.pal(8, name = "YlOrRd")[3]
+diff_color  <- brewer.pal(8, name = "YlOrRd")[4]
+sleep_color <- gray(level = 0, alpha = 0.1)
+my_city     <- "Copenhagen"
+
+# Calculate gain in awake-daylight-time
+gain <- sun %>% 
+  filter(city == my_city) %>% 
+  rowwise() %>% 
+  mutate(awake_daylight_dst = min(sunset, to_bed_at) - max(sunrise, get_up_at),
+         awake_daylight_no_dst = min(sunset_raw, to_bed_at) - max(sunrise_raw, get_up_at),
+         daylight_gain = awake_daylight_dst - awake_daylight_no_dst) %>% 
+  ungroup() %>% 
+  pull(daylight_gain) %>% 
+  sum() %>% 
+  as.numeric()
+
+# Plot for Cph
 pl <- sun %>%
-  filter(city == "Copenhagen") %>% 
-  mutate(fill = day_color) %>%
+  filter(city == my_city) %>%
+  mutate(fill = day_color) %>% 
   ggplot(aes(x = date)) +
   geom_ribbon(aes(ymin = sunrise, ymax = sunset, fill = "Dagslys"), show.legend = T) +
   geom_ribbon(aes(ymin = sunrise_raw, ymax = sunrise, fill = "Flyttet dagslys")) +
@@ -105,7 +122,6 @@ pl <- sun %>%
     date_labels = "%B",
     expand = c(0, 0)
   ) +
-  labs(y = "Klokken", x = "Måned") +
   annotate(
     "rect",
     xmin = year_start,
@@ -133,76 +149,121 @@ pl <- sun %>%
   ) +
   annotate(
     "text",
-    x = year_start + days(5),
+    x = year_start + weeks(25),
     y = day_mid,
     label = "Sommetid flytter soltimer\nfra tidlig morgen til aften",
+    hjust = 1,
+    vjust = 0,
+    size = 3
+  ) +
+  geom_segment(
+    x = year_start + weeks(26),
+    y = day_start + hours(1),
+    xend = year_start + weeks(26),
+    yend = day_end - hours(2),
+    color = grey(0.3),
+    linetype = 2,
+    arrow = arrow(length = unit(2, "mm"), type = "closed")
+  ) +
+  theme(
+    legend.position = c(0.95, 0.95),
+    legend.justification = c(1, 1),
+    legend.title = element_blank(),
+    legend.text = element_text(size = 8),
+    plot.caption = element_text(size = 8),  
+    legend.key.size = unit(1, "line"),
+    axis.title.x = element_text(margin = margin(t = 10, r = 0, b = 0, l = 0)),
+    axis.title.y = element_text(margin = margin(t =  0, r = 10, b = 0, l = 0))
+  ) +
+  labs(title = "Sommertid flytter timer med dagslys til det tidsrum, hvor flest er vågne",
+       subtitle = paste0("Graf for København. Sommertid flytter over året ", round(gain, 0), " timer fra nat/tidlig morgen til dagtimer"),
+       caption = "Grafik: @lassehmadsen. github.com/lassehjorthmadsen/sommertid",
+       y = "Klokken", x = "Måned")
+  
+pl
+
+ggsave("sommertid_cph.png", plot = pl, width = 200, height = 160, units = "mm")
+
+
+# Plot for selected cities
+pl2 <- sun %>%
+  mutate(fill = day_color) %>% 
+  ggplot(aes(x = date)) +
+  geom_ribbon(aes(ymin = sunrise, ymax = sunset, fill = "Dagslys"), show.legend = T) +
+  geom_ribbon(aes(ymin = sunrise_raw, ymax = sunrise, fill = "Flyttet dagslys")) +
+  geom_ribbon(aes(ymin = sunset_raw, ymax = sunset), fill = diff_color) +
+  scale_fill_manual(values = c(day_color, diff_color)) +
+  scale_y_datetime(
+    date_breaks = "2 hours",
+    date_labels = "%H:%M",
+    limits = c(day_start, day_end),
+    expand = c(0, 0)
+  ) +
+  scale_x_date(
+    date_breaks = "months",
+    date_minor_breaks = "month",
+    date_labels = "%B",
+    expand = c(0, 0)
+  ) +
+  facet_wrap(facets = vars(city))
+  
+pl2
+
+  
+  annotate(
+    "rect",
+    xmin = year_start,
+    xmax = year_end,
+    ymin = day_start,
+    ymax = get_up_at,
+    fill = sleep_color
+  ) +
+  annotate(
+    "rect",
+    xmin = year_start,
+    xmax = year_end,
+    ymin = to_bed_at,
+    ymax = day_end,
+    fill = sleep_color
+  ) +
+  annotate(
+    "text",
+    x = year_start + days(5),
+    y = day_start + minutes(15),
+    label = "Mange sover\ni dette tidsrum",
     hjust = 0,
     vjust = 0,
     size = 3
   ) +
-  geom_curve(
-    x = year_start + weeks(11),
-    y = day_mid - minutes(30),
-    xend = summer_start,
-    yend = day_start + minutes(200),
-    arrow = arrow(length = unit(1.5, "mm"), type = "closed")
-  ) + 
-  geom_curve(
-    x = year_start + weeks(21),
-    y = day_mid + minutes(15),
-    xend = summer_end,
-    yend = day_mid + minutes(260),
-    arrow = arrow(length = unit(1.5, "mm"), type = "closed")
+  annotate(
+    "text",
+    x = year_start + weeks(25),
+    y = day_mid,
+    label = "Sommetid flytter soltimer\nfra tidlig morgen til aften",
+    hjust = 1,
+    vjust = 0,
+    size = 3
   ) +
-theme(
-  legend.position = c(0.95, 0.95),
-  legend.justification = c(1, 1),
-  legend.title = element_blank(),
-  legend.text = element_text(size = 8),
-  legend.key.size = unit(1, "line")
-)
-
-pl
-pl + geom_curve(
-  x = year_start + weeks(11),
-  y = day_mid - minutes(30),
-  xend = summer_start,
-  yend = day_start + minutes(200),
-  arrow = arrow(length = unit(1.5, "mm"), type = "closed")
-)
-
-pl + geom_curve(
-  x = year_start + weeks(21),
-  y = day_mid,
-  xend = summer_end,
-  yend = day_mid + minutes(250),
-  arrow = arrow(length = unit(1.5, "mm"), type = "closed")
-)
-
-pl + ylim(day_start, day_end)
-pl + coord_cartesian(ylim = c(day_start, day_end))
-
-# Discarded versions
-morning <- tibble(
-  x = c(year_start, summer_start, summer_start, summer_end, summer_end),
-  y = c(get_up_at, get_up_at, get_up_at - hours(1), get_up_at - hours(1), get_up_at),
-  xend = c(summer_start, summer_start, summer_end, summer_end, year_end),
-  yend = c(get_up_at, get_up_at - hours(1), get_up_at - hours(1), get_up_at, get_up_at)
-)
-
-evening <- tibble(
-  x = c(year_start, summer_start, summer_start, summer_end, summer_end),
-  y = c(to_bed_at, to_bed_at, to_bed_at - hours(1), to_bed_at - hours(1), to_bed_at),
-  xend = c(summer_start, summer_start, summer_end, summer_end, year_end),
-  yend = c(to_bed_at, to_bed_at - hours(1), to_bed_at - hours(1), to_bed_at, to_bed_at)
-)
-
-sun %>% 
-  ggplot(aes(x = date)) +
-  geom_ribbon(aes(ymin = sunrise_raw, ymax = sunset_raw), 
-              fill = "orange", alpha = 0.5) +
-  scale_y_datetime(date_breaks = "2 hours", date_labels = "%H:%M") +
-  scale_x_date(date_breaks = "months", date_labels = "%b") +
-  geom_segment(data = morning, aes(x = x, y = y, xend = xend, yend = yend)) +
-  geom_segment(data = evening, aes(x = x, y = y, xend = xend, yend = yend)) +
-  labs(y = "Normaltid")
+  geom_segment(
+    x = year_start + weeks(26),
+    y = day_start + hours(1),
+    xend = year_start + weeks(26),
+    yend = day_end - hours(2),
+    color = grey(0.3),
+    linetype = 2,
+    arrow = arrow(length = unit(2, "mm"), type = "closed")
+  ) +
+  theme(
+    legend.position = c(0.95, 0.95),
+    legend.justification = c(1, 1),
+    legend.title = element_blank(),
+    legend.text = element_text(size = 8),
+    plot.caption = element_text(size = 8),  
+    legend.key.size = unit(1, "line"),
+    axis.title.x = element_text(margin = margin(t = 10, r = 0, b = 0, l = 0)),
+    axis.title.y = element_text(margin = margin(t =  0, r = 10, b = 0, l = 0))
+  ) +
+  labs(title = "Sommertid flytter timer med dagslys til det tidsrum, hvor flest er vågne",
+       subtitle = paste0("Graf for København. Sommertid flytter over året ", round(gain, 0), " timer fra nat/tidlig morgen til dagtimer"),
+       caption = "Grafik: @lassehmadsen. github.com/lassehjorthmadsen/sommertid",
+       y = "Klokken", x = "Måned")
